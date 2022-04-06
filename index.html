@@ -1,1 +1,178 @@
-<!doctype html><html lang="zh-Hant-TW"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Custom template</title><link href="./css/all.min.b9a13138.css" rel="stylesheet"></head><body class="relative bg-[#E5E5E5] h-screen"><header class="container"><div class="flex items-start justify-between py-4 lg:py-8"><div class="w-auto"><h1 class="text-4xl tracking-wide text-gray-800">Start now</h1><p class="text-4xl tracking-wide text-gray-800">your <span class="font-bold text-black">free plan.</span></p></div><div class="lg:flex lg:items-center"><nav class="hidden lg:block"><a class="text-2xl mr-6" href="./index.html">首頁</a> <a class="text-2xl mr-6" href="./about.html">關於我們</a> <a class="text-2xl mr-6" href="./contact.html">聯繫</a></nav><button id="login" class="w-auto rounded-sm bg-primary py-2 px-4 tracking-widest text-white ring-offset-2 active:bg-primary-dark active:ring-primary active:ring-4 duration-100">LOGIN</button></div></div></header><main class="container mt-8 lg:grid lg:grid-cols-3 lg:gap-8"><div class="w-full p-4 mt-8 bg-secondary rounded-2xl shadow-2xl hover:scale-105 duration-300"><img class="w-full object-cover" src="https://picsum.photos/800/600/?random=1"><p class="text-3xl font-bold mt-4">Free $0 <span class="text-base text-gray-600 font-medium">per month</span></p><div class="w-[40px] h-[3px] bg-primary mt-3"></div><p class="font-bold mt-4 text-lg">Plan includes:</p><ul id="list1" class="text-lg mb-14"></ul><a href="javascript:;" class="w-full mb-8 block font-bold text-center text-black">view all the features</a> <button class="w-full bg-primary py-3 text-lg text-white tracking-wide rounded-lg">Subscribe</button></div><div class="w-full p-4 mt-8 bg-primary text-white rounded-2xl shadow-2xl hover:scale-105 duration-300"><img class="w-full object-cover" src="https://picsum.photos/800/600/?random=2"><p class="text-3xl font-bold mt-4">Standard $20 <span class="text-base text-gray-600 font-medium">per month</span></p><div class="w-[40px] h-[3px] bg-white mt-3"></div><p class="font-bold mt-4 text-lg">Plan includes:</p><ul id="list2" class="text-lg mb-14"></ul><a href="javascript:;" class="w-full mb-8 block font-bold text-center text-white">view all the features</a> <button class="w-full bg-white py-3 text-lg text-black tracking-wide rounded-lg">Subscribe</button></div><div class="w-full p-4 mt-8 bg-secondary rounded-2xl shadow-2xl hover:scale-105 duration-300"><img class="w-full object-cover" src="https://picsum.photos/800/600/?random=3"><p class="text-3xl font-bold mt-4">Pro $90 <span class="text-base text-gray-600 font-medium">per month</span></p><div class="w-[40px] h-[3px] bg-primary mt-3"></div><p class="font-bold mt-4 text-lg">Plan includes:</p><ul id="list3" class="text-lg mb-14"></ul><a href="javascript:;" class="w-full mb-8 block font-bold text-center text-black">view all the features</a> <button class="w-full bg-primary py-3 text-lg text-white tracking-wide rounded-lg">Subscribe</button></div></main><footer class="footer bg-white mt-16"><div class="container lg:flex justify-between items-center py-3 lg:py-6"><div class="md:flex md:items-center"><h5 class="text-3xl font-medium text-black"><a href="javascript:;" class="">tourist attraction</a></h5><p class="text-xl">© 2022. All Rights Reserved.</p></div><ul class="mt-4 flex justify-between lg:mt-0"><li class="nav-item lg:mr-8"><a class="text-xl text-center" href="javascript:;">Sign in</a></li><li class="nav-item"><a class="text-xl text-center" href="javascript:;">Sign up</a></li></ul></div></footer><div id="modal" class="absolute left-0 top-0 right-0 w-full h-full bg-black/80 flex justify-center items-start lg:items-center opacity-0 pointer-events-none duration-300"><div class="w-[90%] p-4 bg-white mt-[150px] rounded-lg lg:mt-0 lg:w-[500px]"><p class="text-3xl my-4 font-medium text-center">LOGIN</p><div class="mb-8"><label for="username">Username</label> <input name="username" class="w-full border-gray-300 border-2 h-[50px] px-3 mt-1 rounded-lg caret-primary focus:border-primary focus:ring-primary"/></div><div class="mb-8"><label for="password">Password</label> <input type="password" name="password" class="w-full border-gray-300 border-2 h-[50px] px-3 mt-1 rounded-lg focus:border-primary focus:ring-primary"/></div><div class="mb-8"><label for="region">Region</label> <select name="region" class="w-full border-gray-300 border-2 h-[50px] px-3 mt-1 rounded-lg focus:border-primary focus:ring-primary"><option value="" selected="selected" disable hidden>請選擇地區</option><option value="TW">Taiwan</option><option value="SG">Singapore</option></select></div><div class="mb-8 flex items-center"><input type="checkbox" name="checkbox" class="mr-2 text-primary focus:ring-primary"/> <label for="checkbox">Remember my username</label></div><button id="close" type="button" class="w-full bg-primary py-3 text-lg text-white tracking-wide rounded-lg mt-4">login</button></div></div><script defer="defer" src="./js/vendor.b9a13138.js"></script><script defer="defer" src="./js/main.b9a13138.js"></script><script defer="defer" src="./js/index.b9a13138.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom template</title>
+<link href="./css/all.min.067d0703.css" rel="stylesheet"></head>
+
+<body class="relative bg-[#E5E5E5] h-screen">
+  <!-- header -->
+<header class="container">
+  <div class="flex items-start justify-between py-4 lg:py-8">
+    <div class="w-auto">
+      <h1 class="text-4xl tracking-wide text-gray-800">Start now</h1>
+      <p class="text-4xl tracking-wide text-gray-800">
+        your <span class="font-bold text-black">free plan.</span>
+      </p>
+    </div>
+    <div class="lg:flex lg:items-center">
+      <nav class="hidden lg:block">
+        <a class="text-2xl mr-6" href="./index.html">首頁</a>
+        <a class="text-2xl mr-6" href="./about.html">關於我們</a>
+        <a class="text-2xl mr-6" href="./contact.html">聯繫</a>
+      </nav>
+      <button id="login" class="w-auto rounded-sm bg-primary py-2 px-4 tracking-widest text-white 
+          ring-offset-2 active:bg-primary-dark active:ring-primary active:ring-4 duration-100">
+        LOGIN
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- all your standard template here -->
+  <main class="container mt-8 lg:grid lg:grid-cols-3 lg:gap-8">
+    <!-- card -->
+    <div class="w-full p-4 mt-8 bg-secondary rounded-2xl shadow-2xl hover:scale-105 duration-300">
+      <img class="w-full object-cover" src="https://picsum.photos/800/600/?random=1">
+      <p class="text-3xl font-bold mt-4">
+        Free $0
+        <span class="text-base text-gray-600 font-medium">per month</span>
+      </p>
+      <div class="w-[40px] h-[3px] bg-primary mt-3"></div>
+      <p class="font-bold mt-4 text-lg">Plan includes:</p>
+      <ul id="list1" class="text-lg mb-14"></ul>
+      <a href="javascript:;" class="w-full mb-8 block font-bold text-center text-black">view all the features</a>
+      <button class="w-full bg-primary py-3 text-lg text-white tracking-wide rounded-lg">
+        Subscribe
+      </button>
+    </div>
+    <!-- card -->
+    <div class="w-full p-4 mt-8 bg-primary text-white rounded-2xl shadow-2xl hover:scale-105 duration-300">
+      <img class="w-full object-cover" src="https://picsum.photos/800/600/?random=2">
+      <p class="text-3xl font-bold mt-4">
+        Standard $20
+        <span class="text-base text-gray-600 font-medium">per month</span>
+      </p>
+      <div class="w-[40px] h-[3px] bg-white mt-3"></div>
+      <p class="font-bold mt-4 text-lg">Plan includes:</p>
+      <ul id="list2" class="text-lg mb-14"></ul>
+      <a href="javascript:;" class="w-full mb-8 block font-bold text-center text-white">view all the features</a>
+      <button class="w-full bg-white py-3 text-lg text-black tracking-wide rounded-lg">
+        Subscribe
+      </button>
+    </div>
+    <!-- card -->
+    <div class="w-full p-4 mt-8 bg-secondary rounded-2xl shadow-2xl hover:scale-105 duration-300">
+      <img class="w-full object-cover" src="https://picsum.photos/800/600/?random=3">
+      <p class="text-3xl font-bold mt-4">
+        Pro $90
+        <span class="text-base text-gray-600 font-medium">per month</span>
+      </p>
+      <div class="w-[40px] h-[3px] bg-primary mt-3"></div>
+      <p class="font-bold mt-4 text-lg">Plan includes:</p>
+      <ul id="list3" class="text-lg mb-14"></ul>
+      <a href="javascript:;" class="w-full mb-8 block font-bold text-center text-black">view all the features</a>
+      <button class="w-full bg-primary py-3 text-lg text-white tracking-wide rounded-lg">
+        Subscribe
+      </button>
+    </div>
+  </main>
+  <!-- all your standard template here -->
+
+  <!-- footer -->
+<footer class="footer bg-white mt-16">
+  <div class="container lg:flex justify-between items-center py-3 lg:py-6">
+    <div class="md:flex md:items-center">
+      <h5 class="text-3xl font-medium text-black">
+        <a href="javascript:;" class="">tourist attraction</a>
+      </h5>
+      <p class="text-xl">© 2022. All Rights Reserved.</p>
+    </div>
+    <ul class="mt-4 flex justify-between lg:mt-0">
+      <li class="nav-item lg:mr-8">
+        <a class="text-xl text-center" href="javascript:;">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-xl text-center" href="javascript:;">Sign up</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+  <!-- modal -->
+  <div id="modal" class="absolute left-0 top-0 right-0 w-full h-full bg-black/80 flex justify-center items-start lg:items-center 
+  opacity-0 pointer-events-none duration-300">
+    <div class="w-[90%] p-4 bg-white mt-[150px] rounded-lg lg:mt-0 lg:w-[500px]">
+      <p class="text-3xl my-4 font-medium text-center">LOGIN</p>
+      <div class="mb-8">
+        <label for="username">Username</label>
+        <input type="text" name="username" class="
+          w-full
+          border-gray-300 border-2
+          h-[50px]
+          px-3
+          mt-1
+          rounded-lg
+          caret-primary
+          focus:border-primary focus:ring-primary
+        " />
+      </div>
+      <div class="mb-8">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="
+            w-full
+            border-gray-300 border-2
+            h-[50px]
+            px-3
+            mt-1
+            rounded-lg
+            focus:border-primary focus:ring-primary
+          " />
+      </div>
+      <div class="mb-8">
+        <label for="region">Region</label>
+        <select
+          name="region"
+          class="
+            w-full
+            border-gray-300 border-2
+            h-[50px]
+            px-3
+            mt-1
+            rounded-lg
+            focus:border-primary focus:ring-primary
+          "
+        >
+          <option value="" selected disable hidden>請選擇地區</option>
+          <option value="TW">Taiwan</option>
+          <option value="SG">Singapore</option>
+        </select>
+      </div>
+      <div class="mb-8 flex items-center">
+        <input
+          type="checkbox"
+          name="checkbox"
+          class="mr-2 text-primary focus:ring-primary"
+        />
+        <label for="checkbox">Remember my username</label>
+      </div>
+      <button id="close" type="button" class="
+        w-full
+        bg-primary
+        py-3
+        text-lg text-white
+        tracking-wide
+        rounded-lg
+        mt-4
+      ">
+        login
+      </button>
+    </div>
+  </div>
+<script defer src="./js/vendor.067d0703.js"></script><script defer src="./js/main.067d0703.js"></script><script defer src="./js/index.067d0703.js"></script></body>
+</html>
+
